@@ -1,21 +1,21 @@
 import Image from "next/image";
-import styles from "../styles/Footer.module.css"
+import styles from "../styles/Footer.module.css";
 import Link from "next/link";
 
 interface FooterProps {
-    children?: string;
-  }
-  
-  const Footer: React.FC<FooterProps> = ({ children }) => {
-    return (
-<div className="section">
-<div className={styles.footer}>
+  children?: string;
+}
+
+const Footer: React.FC<FooterProps> = ({ children }) => {
+  return (
+    <div className="section">
+      <div className={styles.footer}>
         <p className={styles.text}>
           Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
         </p>
         <div className={styles.section}>
-          <Link href="/home">
+          <Link href="/">
             <p className={styles.link}>
               Home <span className={styles.arrow}>&rarr;</span>
             </p>
@@ -77,9 +77,8 @@ interface FooterProps {
         </div>
         {children}
       </div>
-</div>
-    );
-  };
-  
-  export default Footer;
-  
+    </div>
+  );
+};
+
+export default Footer;

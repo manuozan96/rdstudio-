@@ -3,9 +3,8 @@
   flex-direction: column;
 }
 
-
 .homebackground {
-  background-image: url('/BackContacto.png');
+  background-image: url("/BackContacto.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

@@ -1,0 +1,31 @@
+.button {
+    width: 374px;
+    height: 56px;
+    border: 1px solid #f94940;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    background-color: transparent;
+    margin: 56px auto 115px auto; /* Centra el botón y agrega un margen inferior de 115px */
+    transition: background-color 0.3s ease; /* Agrega una transición suave al color de fondo */
+  }
+  
+  .button:hover {
+    background-color: #f94940; /* Cambia el color de fondo a #f94940 cuando se pasa el mouse por encima */
+  }
+  
+  .buttonText {
+    font-family: "DM Sans", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 31.25px;
+    text-align: center;
+    color: #f94940;
+    transition: color 0.3s ease; /* Agrega una transición suave al color del texto */
+  }
+  
+  .button:hover .buttonText {
+    color: white; /* Cambia el color del texto a blanco cuando se pasa el mouse por encima del botón */
+  }
+  

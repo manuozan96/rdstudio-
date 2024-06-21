@@ -60,3 +60,8 @@
   margin-left: 15px;
   padding-bottom: 16px;
 }
+@media (max-width: 375px) {
+  .imageContainer div {
+    flex: 1 0 calc(50% - 20px); /* Asume que quieres 10px de margen a cada lado */
+  }
+}
