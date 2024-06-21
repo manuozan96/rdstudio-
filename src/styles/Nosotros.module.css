@@ -1,0 +1,62 @@
+.container {
+  padding-top: 115px;
+  padding-bottom: 115px;
+}
+
+.nuestro {
+  padding-top: 115px;
+  font-size: 35px;
+  font-family: "DM Sans";
+  line-height: 40px;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 2px;
+  padding-left: 25px;
+}
+
+.equipo {
+  font-size: 35px;
+  font-family: "Instrument Serif";
+  line-height: 40px;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 2px;
+  padding-left: 25px;
+  font-style: italic;
+}
+
+.meet {
+  padding-top: 40px;
+
+  font-family: "DM Sans";
+  font-weight: 600;
+  padding-left: 25px;
+  font-size: 18px;
+}
+
+.imageContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 100px;
+}
+.imageContainer div {
+  flex: 1 0 calc(50% - 40px); /* Asume que quieres 20px de margen a cada lado */
+  margin-right: 5px;
+  margin-left: 20px;
+}
+
+.image {
+  width: 178px;
+  height: 249px;
+  object-fit: cover; /* Asegura que las imágenes mantengan su relación de aspecto */
+  margin-bottom: 6px;
+}
+
+.imageText {
+  font-family: "DM Sans";
+  font-weight: 600;
+  font-size: 16px;
+  margin-left: 15px;
+  padding-bottom: 16px;
+}

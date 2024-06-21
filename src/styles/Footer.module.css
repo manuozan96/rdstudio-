@@ -20,7 +20,6 @@
   text-align: left;
   color: #ededed;
   padding-left: 40px;
-  
 }
 
 .footer .section {
@@ -61,8 +60,7 @@
   display: flex;
   flex-direction: column;
   gap: 17px;
-  margin-top: -25px;
-
+  margin-top: -45px;
 }
 
 .footer .subSection {
@@ -72,7 +70,6 @@
   display: flex;
   flex-direction: column;
   gap: 4px;
-  
 }
 
 .footer .officeText {
@@ -92,7 +89,8 @@
   padding-left: 0;
   display: flex;
   justify-content: flex-start;
-    gap: 20px;
+  gap: 20px;
+  padding-bottom: 55px;
 }
 
 .footer .icon {

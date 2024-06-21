@@ -1,0 +1,81 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.intbackground {
+  background-image: url("/BackgroundInterna.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+  height: 932px;
+}
+
+@media (max-width: 768px) {
+  .intbackground {
+    min-height: 500px; /* Cambia 'height' a 'min-height' */
+  }
+}
+
+@media (max-width: 480px) {
+  .intbackground {
+    min-height: 500px; /* Ajusta este valor según tus necesidades */
+  }
+}
+
+.newSection {
+  max-height: 1079px;
+  padding-top: 115px;
+}
+
+.line {
+  display: flex;
+  justify-content: space-between;
+}
+
+.text,
+.textRight {
+  margin-top: 10px;
+  width: 100%;
+  padding: 6px 28px;
+  border-bottom: 1px solid #0a0e0b;
+  font-family: "Instrument-Serif", Regular;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  padding-right: 15px;
+  text-transform: uppercase;
+}
+
+.colombia {
+  white-space: nowrap;
+}
+.año {
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.entregable {
+  margin-top: 20px;
+}
+
+.locacion {
+  display: inline-block;
+}
+.tamaño {
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.proyectoDescripcion {
+  height: 324px;
+  margin-top: 115px;
+  padding: 40px 28px;
+  text-align: center;
+  vertical-align: top;
+  font-weight: 500;
+  font-size: 20px;
+  font-family: "DM Sans";
+  margin-bottom: 115px;
+}
