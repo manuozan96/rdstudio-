@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.homebackground {
+  background-image: url('/BackContacto.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 932px;
+}
+
+@media (max-width: 768px) {
+  .home-background {
+    height: 500px; /* Ajusta este valor según tus necesidades */
+  }
+}
+
+@media (max-width: 480px) {
+  .home-background {
+    height: 300px; /* Ajusta este valor según tus necesidades */
+  }
+}
+

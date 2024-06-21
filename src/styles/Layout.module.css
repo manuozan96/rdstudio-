@@ -1,0 +1,20 @@
+.layout {
+    width: 100%;
+    max-width: 430px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  /* Estilos para tablet */
+  @media (min-width: 768px) {
+    .layout {
+      max-width: 768px;
+    }
+  }
+  
+  /* Estilos para desktop */
+  @media (min-width: 1024px) {
+    .layout {
+      max-width: 1024px;
+    }
+  }
