@@ -16,21 +16,15 @@ const Contacto: React.FC = () => {
             transforma espacios
           </p>
         </div>
-        <div className={styles.content}>
-          <p className={styles.offices}>
-            Somos un estudio creativo que
-            <br />
-            <strong>transforma espacios</strong>
-          </p>
-        </div>
-        <div className={styles.contactInfo}>
-          <p>
+
+        <div>
+          <p className={styles.contactInfo}>
             Oficina México <br />
             (+57) (1)  813 48 36 <br /> info@reinharddienes.com <br />
             CARRERA 7 #73-55{" "}
           </p>
           <br />
-          <p className={styles.officeText}>
+          <p className={styles.contactInfo2}>
             Oficina México <br />
             (+57) (1)  813 48 36 <br /> info@reinharddienes.com <br />
             CARRERA 7 #73-55{" "}

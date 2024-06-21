@@ -16,10 +16,8 @@
   font-family: "DM Sans";
   font-size: 24px;
   font-weight: 500;
-}
-
-.strong {
-  font-weight: bold; /* Esto hará que el texto sea más oscuro */
+  margin-top: 200px;
+  margin-bottom: 120px;
 }
 
 .contactInfo {
@@ -31,11 +29,25 @@
   text-align: left;
   color: #ededed;
   text-transform: uppercase;
-  position: absolute;
+  bottom: 20px;
+  z-index: 1;
+  margin-top: 180px;
+  margin-right: 100px;
+}
+.contactInfo2 {
+  color: #ededed;
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 23.44px;
+  text-align: left;
+  color: #ededed;
+  text-transform: uppercase;
   bottom: 20px;
   left: 20px;
-  margin-bottom: 42px;
+  z-index: 1;
 }
+
 .newSection {
   padding-top: 115px;
   margin-bottom: 52px;
@@ -66,7 +78,7 @@
   border: none;
   border-bottom: 1px solid #0a0e0b;
   padding: 12px 24px;
-  width: 402px;
+  width: 100%;
   height: 45px;
   font-size: 14px;
   font-family: "DM Sans";
@@ -107,4 +119,128 @@
 .button:hover {
   background-color: #f94940;
   color: white;
+}
+@media screen and (max-width: 768px) {
+  .contbackground {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 932px; /* Asegúrate de que este es el tamaño que quieres */
+    background-image: url("/BackContacto.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .title {
+    color: #ededed;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 200px;
+    margin-bottom: 120px;
+  }
+
+  .contactInfo {
+    color: #ededed;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 23.44px;
+    text-align: left;
+    color: #ededed;
+    text-transform: uppercase;
+    bottom: 20px;
+    z-index: 1;
+    margin-top: 180px;
+    margin-right: 100px;
+  }
+  .contactInfo2 {
+    color: #ededed;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 23.44px;
+    text-align: left;
+    color: #ededed;
+    text-transform: uppercase;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1;
+  }
+
+  .newSection {
+    padding-top: 115px;
+    margin-bottom: 52px;
+  }
+
+  .newSectionTitle {
+    font-family: "DM Sans";
+    font-size: 42px;
+    margin-bottom: 115px;
+    margin-left: 25px;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+  .part2 {
+    font-family: "Instrument Serif";
+    font-size: 44px;
+    font-style: italic;
+    font-weight: 400;
+  }
+
+  .form {
+    display: grid;
+    gap: 10px;
+  }
+
+  .input {
+    background: #e6e6e6;
+    border: none;
+    border-bottom: 1px solid #0a0e0b;
+    padding: 12px 24px;
+    width: 100%;
+    height: 45px;
+    font-size: 14px;
+    font-family: "DM Sans";
+    text-transform: uppercase;
+    margin-left: 0px;
+  }
+
+  .labels {
+    margin-left: 25px;
+    font-weight: 900px;
+    font-size: 14px;
+    font-family: "DM Sans";
+    text-transform: uppercase;
+    margin-bottom: 25px;
+  }
+
+  .button {
+    color: #f94940;
+    width: 374px;
+    height: 56px;
+    border: 1px solid #f94940;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    background-color: transparent;
+    font-family: "DM Sans", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 31.25px;
+    text-align: center;
+    color: #f94940;
+    transition: color 0.3s ease; /* Agrega una transición suave al color del texto */
+    margin: 56px auto 115px auto; /* Centra el botón y agrega un margen inferior de 115px */
+    transition: background-color 0.3s ease; /* Agrega una transición suave al color de fondo */
+  }
+
+  .button:hover {
+    background-color: #f94940;
+    color: white;
+  }
 }
