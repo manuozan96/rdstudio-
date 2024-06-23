@@ -2,7 +2,11 @@ import React from "react";
 import Layout from "./Layout";
 import Footer from "./Footer";
 import ImageCard from "./ImagesCard";
-
+import Button from "./Button";
+import button from "../styles/Button.module.css";
+import Image from "../../public/imagen.png";
+import Habanera from "../../public/Habanera.png";
+import Bri from "../../public/Bri.png";
 const Proyectos: React.FC = () => {
   return (
     <Layout background="var(--bgcolorinv)">
@@ -14,25 +18,23 @@ const Proyectos: React.FC = () => {
       <ImageCard
         imageData={[
           {
-            src: "/Brera.png",
+            src: Bri,
+            className: "bri",
             text: "Brigada\ntraining lab",
-            styles: { width: 374, height: 450 },
           },
           {
-            src: "/imagen.png",
+            src: Image,
+            className: "image2",
             text: "love\nchicharrón",
-
-            styles: { width: 500, height: 600 },
           },
           {
-            src: "/Habanera.png",
+            src: Habanera,
+            className: "habanera",
             text: "nimi's\nshawarma",
-
-            styles: { width: 300, height: 400 },
           },
         ]}
-        buttonText="Cargar más"
       />
+      <Button className={button.button}>Cargar más</Button>
       <Footer />
     </Layout>
   );

@@ -111,12 +111,66 @@
 }
 
 /* Estilos para desktop */
-@media (min-width: 1024px) {
+@media (min-width: 1280px) {
   .footer {
     gap: 3rem;
   }
-  .footer .text,
+  .footer .text {
+    font-size: 1.5rem;
+    max-width: 380px;
+    max-height: 104px;
+    margin-top: -6%;
+    margin-bottom: 2%;
+  }
   .footer .link {
     font-size: 2rem;
+  }
+  .footer .section {
+    justify-content: space-around;
+    max-width: 471px;
+    margin-left: 54%;
+    padding: 0;
+    margin-top: -15%;
+    max-height: 550px;
+  }
+  .footer .newSection {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    margin-top: -35%;
+    margin-left: 4%;
+  }
+
+  .footer .subSection {
+    width: 100%;
+    box-sizing: border-box;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .footer .officeText {
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 23.44px;
+    text-align: left;
+    color: #ededed;
+    text-transform: uppercase;
+  }
+  .footer .iconSection {
+    box-sizing: border-box;
+    width: 100%;
+    height: 30px;
+    padding-left: 0;
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    padding-bottom: 55px;
+    margin-left: 4%;
   }
 }

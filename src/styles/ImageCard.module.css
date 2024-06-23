@@ -1,8 +1,7 @@
 .imageContainer {
-  display: flex;
-  padding: 20px;
-  flex-direction: column;
+  display: grid;
   align-items: center;
+  padding: 16px;
   position: relative;
 }
 
@@ -29,7 +28,7 @@
   font-family: "DM Sans";
   font-weight: 400;
   font-size: 24px;
-  color: #EDEDED;
+  color: #ededed;
   text-transform: uppercase;
   line-height: auto;
   text-align: left;
@@ -37,33 +36,62 @@
   white-space: pre-wrap;
 }
 
-.button {
+.breradesk,
+.chicharron,
+.kod {
+  display: block;
+  margin: 0 auto;
   width: 374px;
-  height: 56px;
-  border: 1px solid #f94940;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0px;
-  background-color: transparent;
-  margin: 56px auto 115px auto; /* Centra el botón y agrega un margen inferior de 115px */
-  transition: background-color 0.3s ease; /* Agrega una transición suave al color de fondo */
+  height: 450px;
+  margin-bottom: 28px;
 }
 
-.button:hover {
-  background-color: #f94940; /* Cambia el color de fondo a #f94940 cuando se pasa el mouse por encima */
+.brera,
+.breradesk,
+.chicharron,
+.kod {
+  display: none;
 }
 
-.buttonText {
-  font-family: "DM Sans", sans-serif;
-  font-size: 24px;
-  font-weight: 500;
-  line-height: 31.25px;
-  text-align: center;
-  color: #f94940;
-  transition: color 0.3s ease; /* Agrega una transición suave al color del texto */
+
+@media (min-width: 1024px) {
+  .imageContainer {
+    display: grid;
+    align-items: center;
+  }
+  .image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin: auto;
+    max-width: 347px;
+    max-height: 450px;
+  }
+
+  .bri,
+  .image2,
+  .habanera {
+    display: block;
+  }
+  .brera,
+  .breradesk,
+  .chicharron,
+  .kod {
+    display: none;
+  }
+  
 }
 
-.button:hover .buttonText {
-  color: white; /* Cambia el color del texto a blanco cuando se pasa el mouse por encima del botón */
+@media (min-width: 430px) {
+  .bri,
+  .image2,
+  .habanera {
+    display: block;
+  }
+  .brera,
+  .breradesk,
+  .chicharron,
+  .kod {
+    display: none;
+  }
 }

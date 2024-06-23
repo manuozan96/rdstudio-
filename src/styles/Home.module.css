@@ -1,6 +1,7 @@
 .container {
   display: flex;
   flex-direction: column;
+  z-index: 1;
 }
 
 .homebackground {
@@ -11,15 +12,107 @@
   height: 932px;
 }
 
-@media (max-width: 768px) {
-  .home-background {
-    height: 500px; /* Ajusta este valor según tus necesidades */
-  }
+.logo {
+  z-index: 2;
+  position: absolute;
+  margin-top: 100%;
+  margin-left: 30%;
+  width: 176px;
+  height: 35px;
 }
 
-@media (max-width: 480px) {
-  .home-background {
-    height: 300px; /* Ajusta este valor según tus necesidades */
-  }
+.title {
+  font-family: "DM Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: center;
+  margin-left: 10px;
+  margin-top: 115px;
+  margin-bottom: 115px;
 }
 
+.containertext {
+  padding-top: 115px;
+  padding-bottom: 115px;
+}
+
+.textone {
+  padding-top: 115px;
+  font-size: 35px;
+  font-family: "DM Sans";
+  line-height: 40px;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 2px;
+  padding-left: 25px;
+  z-index: 2;
+  position: absolute;
+  color: #ededed;
+}
+
+.texttwo {
+  font-size: 35px;
+  margin-top: 38%;
+  font-family: "Instrument Serif";
+  line-height: 40px;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 2px;
+  padding-left: 25px;
+  font-style: italic;
+  z-index: 2;
+  position: absolute;
+  color: #ededed;
+}
+
+.elektra,
+.elektra1,
+.lovechicharron,
+.lovechicharron1 {
+  z-index: 2;
+  position: absolute;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    display: grid;
+    flex-direction: column;
+    z-index: 1;
+  }
+  .logo {
+    margin-top: 30%; /* Ajuste de posición */
+    margin-left: 40%; /* Ajuste de posición */
+    width: 200px; /* Aumento del tamaño */
+    height: 40px; /* Aumento del tamaño */
+  }
+
+  .title {
+    width: 629px;
+    height: 180px;
+    font-size: 36px;
+    margin-top: 115px;
+    line-height: 36px;
+    margin-left: 25%;
+  }
+  .containertext {
+    padding-top: 50px; /* Ajuste de padding */
+    padding-bottom: 50px; /* Ajuste de padding */
+  }
+
+  .textone {
+    padding-top: 50px; /* Ajuste de padding */
+    font-size: 45px; /* Aumento del tamaño de fuente */
+    line-height: 50px; /* Ajuste de line-height */
+    padding-left: 50px; /* Ajuste de padding */
+  }
+
+  .texttwo {
+    font-size: 45px; /* Aumento del tamaño de fuente */
+    margin-top: 8%; /* Ajuste de posición */
+    line-height: 50px; /* Ajuste de line-height */
+    padding-left: 50px; /* Ajuste de padding */
+  }
+
+  /* Ajustes adicionales para otros elementos si es necesario */
+}

@@ -4,6 +4,12 @@ import Navbar from "./Navbar";
 import styles from "../styles/Interna.module.css";
 import ImageCard from "./ImagesCard";
 import Footer from "./Footer";
+import One from "../../public/One.png"
+import Two from "../../public/Two.png"
+import Three from "../../public/One.png"
+import Four from "../../public/Four.png"
+import Button from "./Button";
+
 
 const Interna: React.FC = () => {
   return (
@@ -59,24 +65,20 @@ const Interna: React.FC = () => {
           <ImageCard
             imageData={[
               {
-                src: "/One.png",
-                styles: { width: 374, height: 230 },
+                src: One,
               },
               {
-                src: "/Two.png",
-                styles: { width: 500, height: 230 },
+                src: Two,
               },
               {
-                src: "/Three.png",
-                styles: { width: 374, height: 230 },
+                src: Three,
               },
               {
-                src: "/Four.png",
-                styles: { width: 374, height: 230 },
+                src: Four,
               },
             ]}
-            buttonText="Siguiente proyecto"
           />
+          <Button>Siguiente proyecto</Button>
         </div>
       </div>
       <Footer />

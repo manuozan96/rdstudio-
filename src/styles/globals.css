@@ -7,7 +7,6 @@
       transparent 5%
     ),
     linear-gradient(to bottom right, #efcac8 0%, #ededed 38%);
-    
 }
 
 * {
@@ -22,19 +21,6 @@
     linear-gradient(to bottom right, #efcac8 0%, #ededed 100%);
   background-repeat: cover;
   background-size: cover;
-}
-
-.title {
-  width: 374px;
-  height: 135px;
-  font-family: "DM Sans", sans-serif;
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 27px;
-  text-align: center;
-  padding-left: 50px;
-  margin-top: 115px;
-  margin-bottom: 115px;
 }
 
 .proyectos-text-container {
@@ -59,3 +45,14 @@
   text-wrap: nowrap;
 }
 
+@media (min-width: 1024px) {
+  .proyectos-text-container {
+    width: 656px;
+    height: 158px;
+    text-align: center;
+    padding-left: 50%;
+  }
+  .proyectos-text {
+    font-size: 32px;
+  }
+}

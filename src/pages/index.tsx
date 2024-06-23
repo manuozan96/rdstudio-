@@ -4,6 +4,13 @@ import styles from "../styles/Home.module.css";
 import Footer from "@/components/Footer";
 import ImageCard from "@/components/ImagesCard";
 import Navbar from "@/components/Navbar";
+import Imagen from "../../public/imagen.png";
+import Habanera from "../../public/Habanera.png";
+import Brera from "../../public/Brera.png";
+import Button from "@/components/Button";
+import text from "../styles/Nosotros.module.css";
+import rdstudio from "../../public/rdstudio.png";
+import Image from "next/image";
 
 const Home: React.FC = () => {
   return (
@@ -11,9 +18,10 @@ const Home: React.FC = () => {
       <div className={styles.container}>
         <Navbar backgroundColor="#000000" />
         <div className={styles.homebackground}></div>
+        <Image src={rdstudio} className={styles.logo} alt="home" />
         <div className={styles.imageContainer}>
           <div>
-            <p className="title">
+            <p className={styles.title}>
               Somos un estudio creativo que{" "}
               <strong>
                 transforma espacios
@@ -30,21 +38,30 @@ const Home: React.FC = () => {
             <ImageCard
               imageData={[
                 {
-                  src: "/Brera.png",
-                  styles: { width: 374, height: 450 },
+                  src: Brera,
                 },
                 {
-                  src: "/imagen.png",
-                  styles: { width: 500, height: 600 },
+                  src: Imagen,
                 },
                 {
-                  src: "/Habanera.png",
-                  styles: { width: 300, height: 400 },
+                  src: Habanera,
                 },
               ]}
-              buttonText="Cargar más"
             />
+            <Button>Cargar más</Button>
           </div>
+        </div>
+        <div>
+          <div className={styles.homebackground}>
+            <div className={styles.containertext}>
+              <p className={styles.textone}>Nuestro</p>
+              <p className={styles.texttwo}>impacto</p>
+            </div>
+          </div>
+        </div>
+        <div className={text.container}>
+          <p className={text.nuestro}>Nuestros</p>
+          <p className={text.equipo}>Clientes.</p>
         </div>
         <Footer />
       </div>
